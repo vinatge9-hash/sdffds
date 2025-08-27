@@ -1,0 +1,332 @@
+<!--  -->
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Niyantri — Home</title>
+  <meta name="description" content="Niyantri — specialty coffee, cozy atmosphere, made-to-order pastries. Full-width responsive site." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:300,400,500,600,700&family=Playfair+Display:300,400,500,600,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          },
+          colors: {
+            coffee: {
+              50: '#fdf8f5',
+              100: '#fbefe7',
+              300: '#d8b7a2',
+              500: '#a97457',
+              700: '#6f3f2b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" style="font-family: 'Inter', sans-serif;" class="antialiased text-coffee-700 font-sans leading-relaxed bg-gradient-to-b from-coffee-50 to-white">
+  <!-- Header / Nav -->
+  <header class="w-full max-w-none bg-white/60 backdrop-blur sticky top-0 z-40">
+    <div class="w-full max-w-none mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="flex items-center gap-3">
+        <div class="rounded-full w-12 h-12 bg-cover bg-center shadow-lg" style="background-image:url('https://images.unsplash.com/photo-1730402237943-77047c2389b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxjbG9zZS11cCUyMG9mJTIwY29mZmVlJTIwYmVhbnMlMjBpbiUyMHdhcm0lMjBicm93biUyMHRvbmVzJTIwd2l0aCUyMHNvZnQlMjBuYXR1cmFsJTIwbGlnaHR8ZW58MHwwfHx8MTc1NjI3NjU1NHww&ixlib=rb-4.1.0&q=80&w=1080')"></div>
+        <div>
+          <h1 class="text-2xl font-display text-coffee-700 leading-tight">Niyantri</h1>
+          <p class="text-xs text-coffee-500 -mt-1">Specialty Coffee & Pastries</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 font-medium">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="hover:text-coffee-700 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('about.html');" class="hover:text-coffee-700 transition">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('contact.html');" class="hover:text-coffee-700 transition">Contact</a>
+        <a href="#menu" class="text-sm bg-coffee-500 text-white px-4 py-2 rounded-md shadow hover:scale-105 transition">Menu</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobileToggle" aria-label="Open menu" class="p-2 rounded-md bg-white shadow">
+          <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-coffee-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white/90 backdrop-blur px-6 pb-6">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="block py-3 border-b">Home</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('about.html');" class="block py-3 border-b">About</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('contact.html');" class="block py-3 border-b">Contact</a>
+      <a href="#menu" class="block py-3">Menu</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="w-full max-w-none">
+    <section class="w-full max-w-none relative overflow-hidden">
+      <div class="w-full h-[60vh] md:h-[72vh] bg-cover bg-center" style="background-image:url('https://pixabay.com/get/g9e019fd6e5c1ca28b9f3af6a3a5d532dd602e1fe5f8c07758bdd8d5b3503047eabfcf3037dee5f85734006627aabfea92976b73d48208757c2f23635aa235c1d_640.jpg')">
+        <div class="w-full h-full bg-gradient-to-b from-transparent via-transparent to-white/70 flex items-end">
+          <div class="w-full max-w-none px-6 pb-12 md:pb-20">
+            <div class="max-w-none bg-white/80 backdrop-blur p-6 md:p-10 rounded-md inline-block shadow-lg transform transition hover:-translate-y-1">
+              <h2 class="text-3xl md:text-5xl font-display text-coffee-700">Taste the Moment</h2>
+              <p class="mt-2 text-coffee-600">Thoughtfully-sourced beans, brewed to order. Cozy space & freshly baked pastries every day.</p>
+              <div class="mt-4 flex gap-3">
+                <a href="#menu" class="inline-block bg-coffee-500 text-white px-4 py-2 rounded-md shadow hover:scale-105 transition">See Menu</a>
+                <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('contact.html');" class="inline-block border border-coffee-500 text-coffee-700 px-4 py-2 rounded-md shadow-sm hover:bg-coffee-50 transition">Visit Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured & CTA -->
+    <section class="w-full max-w-none px-6 py-10 md:py-14">
+      <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <h3 class="font-display text-xl">Fresh Beans</h3>
+          <p class="mt-2 text-sm text-coffee-600">Single-origin beans roasted weekly for bright flavors and sweet finish.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <h3 class="font-display text-xl">Craft Brewing</h3>
+          <p class="mt-2 text-sm text-coffee-600">Pour-over, espresso, cold brew — precision and care in every cup.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <h3 class="font-display text-xl">Baked Daily</h3>
+          <p class="mt-2 text-sm text-coffee-600">Seasonal pastries and savory bites made by our in-house baker.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu with filter -->
+    <section id="menu" class="w-full max-w-none px-6 py-10 bg-white/50">
+      <div class="w-full flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-display">Menu Highlights</h2>
+        <div class="flex gap-2">
+          <button data-filter="all" class="filterBtn px-3 py-1 rounded-full bg-coffee-500 text-white text-sm">All</button>
+          <button data-filter="espresso" class="filterBtn px-3 py-1 rounded-full bg-white border border-coffee-300 text-coffee-700 text-sm">Espresso</button>
+          <button data-filter="cold" class="filterBtn px-3 py-1 rounded-full bg-white border border-coffee-300 text-coffee-700 text-sm">Cold Brew</button>
+          <button data-filter="pastry" class="filterBtn px-3 py-1 rounded-full bg-white border border-coffee-300 text-coffee-700 text-sm">Pastries</button>
+        </div>
+      </div>
+
+      <div id="menuGrid" class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article data-type="espresso" class="p-5 bg-white rounded-lg shadow hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1665727494461-16f109b4e503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxyaWNoJTIwZXNwcmVzc28lMjBzaG90JTIwcG91cmVkJTIwaW50byUyMHNtYWxsJTIwY2VyYW1pYyUyMGN1cCUyMHdpdGglMjBjcmVtYSUyMG9uJTIwdG9wfGVufDB8MHx8fDE3NTYyNzY1NTV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Espresso" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="font-display text-lg">Classic Espresso</h3>
+          <p class="text-sm text-coffee-600">Intense, velvety, and balanced. Single shot or double.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-coffee-700 font-medium">$3.00</span>
+            <button class="text-sm text-coffee-500 hover:text-coffee-700">Order</button>
+          </div>
+        </article>
+
+        <article data-type="cold" class="p-5 bg-white rounded-lg shadow hover:scale-[1.02] transition">
+          <img src="https://pixabay.com/get/gc8bf1ce4f84302b75752c940f868ad6263ce40393b0bcfccb05145713fa5c654155129cec1fca5c0b66c4dfbf332330159b66aff47360073bd76326ad40a4f24_640.jpg" alt="Cold Brew" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="font-display text-lg">Nitro Cold Brew</h3>
+          <p class="text-sm text-coffee-600">Creamy, smooth, and refreshing. Served cold right from the tap.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-coffee-700 font-medium">$4.50</span>
+            <button class="text-sm text-coffee-500 hover:text-coffee-700">Order</button>
+          </div>
+        </article>
+
+        <article data-type="pastry" class="p-5 bg-white rounded-lg shadow hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1733210438330-95dadd453e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxmbGFreSUyMGdvbGRlbiUyMGJ1dHRlciUyMGNyb2lzc2FudCUyMG9uJTIwYSUyMHdvb2RlbiUyMGJvYXJkfGVufDB8MHx8fDE3NTYyNzY1NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Croissant" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="font-display text-lg">Butter Croissant</h3>
+          <p class="text-sm text-coffee-600">Light, flaky, and baked to golden perfection every morning.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-coffee-700 font-medium">$2.75</span>
+            <button class="text-sm text-coffee-500 hover:text-coffee-700">Order</button>
+          </div>
+        </article>
+
+        <article data-type="espresso" class="p-5 bg-white rounded-lg shadow hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1722556349973-f59bd9d857ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxsYXR0ZSUyMHdpdGglMjBsZWFmJTIwbGF0dGUlMjBhcnQlMjBpbiUyMGNlcmFtaWMlMjBjdXAlMjBvbiUyMGElMjBzYXVjZXJ8ZW58MHwwfHx8MTc1NjI3NjU1N3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Latte" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="font-display text-lg">Signature Latte</h3>
+          <p class="text-sm text-coffee-600">Silky steamed milk with our house espresso and daily-crafted foam art.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-coffee-700 font-medium">$4.00</span>
+            <button class="text-sm text-coffee-500 hover:text-coffee-700">Order</button>
+          </div>
+        </article>
+
+        <article data-type="pastry" class="p-5 bg-white rounded-lg shadow hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1594661687831-0ced2bf0a5af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxhbG1vbmQlMjB0YXJ0JTIwd2l0aCUyMGNhcmFtZWxpemVkJTIwdG9wJTIwb24lMjBjZXJhbWljJTIwcGxhdGV8ZW58MHwwfHx8MTc1NjI3NjU1OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Almond Tart" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="font-display text-lg">Almond Tart</h3>
+          <p class="text-sm text-coffee-600">Buttery crust, almond cream, and a caramelized finish.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-coffee-700 font-medium">$3.50</span>
+            <button class="text-sm text-coffee-500 hover:text-coffee-700">Order</button>
+          </div>
+        </article>
+
+        <article data-type="cold" class="p-5 bg-white rounded-lg shadow hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1696569366617-32c6e34432ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxpY2VkJTIwbWlsayUyMGNvZmZlZSUyMGluJTIwdGFsbCUyMGdsYXNzJTIwd2l0aCUyMGljZSUyMGN1YmVzJTIwYW5kJTIwY29uZGVuc2F0aW9ufGVufDB8MHx8fDE3NTYyNzY1NTh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Iced Coffee" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="font-display text-lg">Iced Milk Coffee</h3>
+          <p class="text-sm text-coffee-600">Bright and balanced, served over ice with your choice of milk.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-coffee-700 font-medium">$3.75</span>
+            <button class="text-sm text-coffee-500 hover:text-coffee-700">Order</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="w-full max-w-none px-6 py-10">
+      <h2 class="text-2xl font-display mb-4">Gallery</h2>
+      <div class="w-full grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <button class="galleryItem rounded-md overflow-hidden" data-src="https://pixabay.com/get/g7225af164541236651f8ae0780434d022f2e346ab7d0063a207235608f3891a36f68b8663c7462f4964148866762b7df30d72d3e99a3ed66275bd777f32676cf_640.jpg">
+          <img src="https://images.pexels.com/photos/32117504/pexels-photo-32117504.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="cozy corner" class="w-full h-36 object-cover" />
+        </button>
+        <button class="galleryItem rounded-md overflow-hidden" data-src="https://images.pexels.com/photos/6205599/pexels-photo-6205599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+          <img src="https://pixabay.com/get/g339b02d43e77aa6b8a4e149ffcc2fd803cb2162d384dd797034e5d86db56cd5b2de5707c96cd4e82db7bbb66751150b4d97c960d45afe44bd3f92639b164e7fd_640.jpg" alt="barista" class="w-full h-36 object-cover" />
+        </button>
+        <button class="galleryItem rounded-md overflow-hidden" data-src="https://images.unsplash.com/photo-1536056298178-a36a9ba0b0f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxkaXNwbGF5JTIwb2YlMjBmcmVzaGx5JTIwYmFrZWQlMjBwYXN0cmllcyUyMG9uJTIwd29vZGVuJTIwdHJheXxlbnwwfDB8fHwxNzU2Mjc2NTYyfDA&ixlib=rb-4.1.0&q=80&w=1080">
+          <img src="https://images.unsplash.com/photo-1608220874995-aa3e5301c676?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxkaXNwbGF5JTIwb2YlMjBmcmVzaGx5JTIwYmFrZWQlMjBwYXN0cmllcyUyQyUyMHNtYWxsJTIwY3JvcHxlbnwwfDB8fHwxNzU2Mjc2NTYyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="pastries" class="w-full h-36 object-cover" />
+        </button>
+        <button class="galleryItem rounded-md overflow-hidden" data-src="https://pixabay.com/get/gb01b5c65efaef0bee4bdb4bff0ce5ca84ed66f9daa1ecf7a92d61c966760698f6a7a3e69db71e7d080eecb6c08259b8b_640.jpg">
+          <img src="https://images.pexels.com/photos/18628833/pexels-photo-18628833.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="outdoor" class="w-full h-36 object-cover" />
+        </button>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="w-full max-w-none px-6 py-10 bg-coffee-50">
+      <div class="w-full md:flex md:items-center md:justify-between gap-6">
+        <div>
+          <h3 class="text-xl font-display">Join our newsletter</h3>
+          <p class="mt-2 text-sm text-coffee-600">Get seasonal menu drops, events, and exclusive offers.</p>
+        </div>
+        <form id="newsletterForm" class="mt-4 md:mt-0 flex gap-2 max-w-none w-full md:w-auto">
+          <input id="newsletterEmail" type="email" placeholder="Email address" required class="w-full md:w-[320px] px-4 py-2 rounded-md border border-coffee-200 focus:outline-none" />
+          <button type="submit" class="px-4 py-2 bg-coffee-700 text-white rounded-md shadow hover:scale-105 transition">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full max-w-none bg-white/80 backdrop-blur mt-8">
+    <div class="w-full px-6 py-8 md:flex md:justify-between md:items-start gap-6">
+      <div>
+        <h4 class="font-display text-lg">Niyantri</h4>
+        <p class="text-sm text-coffee-600">123 Bean Lane — Open daily 7am–6pm</p>
+        <p class="text-sm text-coffee-600 mt-1">Cofounders: GSR & MRR</p>
+        <div class="mt-3 flex gap-3">
+          <a href="#" class="text-coffee-600 hover:text-coffee-700">Instagram</a>
+          <a href="#" class="text-coffee-600 hover:text-coffee-700">Facebook</a>
+        </div>
+      </div>
+      <nav class="mt-6 md:mt-0">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="block py-1">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('about.html');" class="block py-1">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('contact.html');" class="block py-1">Contact</a>
+      </nav>
+    </div>
+    <div class="w-full border-t border-coffee-100 text-center py-4 text-sm text-coffee-500">© <span id="year"></span> Niyantri — All rights reserved</div>
+  </footer>
+
+  <!-- Gallery Modal -->
+  <div id="lightbox" class="fixed inset-0 hidden items-center justify-center bg-black/60 z-50">
+    <div class="max-w-none w-full px-6">
+      <div class="mx-auto max-w-3xl bg-white rounded-md overflow-hidden shadow-lg">
+        <button id="closeLightbox" class="p-3 text-coffee-700">Close ×</button>
+        <img id="lightboxImg" src="" alt="gallery" class="w-full h-[60vh] object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Header mobile toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileToggle?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Menu filter
+    const filterBtns = document.querySelectorAll('.filterBtn');
+    const menuItems = document.querySelectorAll('#menuGrid article');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        filterBtns.forEach(b => b.classList.replace('bg-coffee-500', 'bg-white'));
+        filterBtns.forEach(b => b.classList.remove('text-white'));
+        btn.classList.add('bg-coffee-500');
+        btn.classList.add('text-white');
+        const filter = btn.getAttribute('data-filter');
+        menuItems.forEach(item => {
+          if (filter === 'all' || item.dataset.type === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Gallery Lightbox
+    const galleryItems = document.querySelectorAll('.galleryItem');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLightbox = document.getElementById('closeLightbox');
+    galleryItems.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-src');
+        lightboxImg.src = src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+      });
+    });
+    closeLightbox.addEventListener('click', () => {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      lightboxImg.src = '';
+    });
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+        lightboxImg.src = '';
+      }
+    });
+
+    // Newsletter validation
+    const newsletterForm = document.getElementById('newsletterForm');
+    newsletterForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('newsletterEmail');
+      if (!email.value || !/\S+@\S+\.\S+/.test(email.value)) {
+        email.classList.add('border-red-500');
+        alert('Please enter a valid email address');
+        return;
+      }
+      email.value = '';
+      alert('Thanks for subscribing!');
+    });
+
+    // Small accessibility: close modal with Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+        lightboxImg.src = '';
+      }
+    });
+  </script>
+</body>
+</html>
