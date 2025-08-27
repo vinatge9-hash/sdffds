@@ -1,0 +1,159 @@
+<!--  -->
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Niyantri Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:300,400,500,600,700&family=Playfair+Display:300,400,500,600,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          },
+          colors: { coffee: { 50: '#fdf8f5', 100: '#fbefe7', 300: '#d8b7a2', 500: '#a97457', 700: '#6f3f2b' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" style="font-family: 'Inter', sans-serif;" class="antialiased text-coffee-700 font-sans bg-white">
+  <header class="w-full max-w-none bg-white/60 sticky top-0 z-40">
+    <div class="w-full px-6 py-4 flex items-center justify-between">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="flex items-center gap-3">
+        <div class="rounded-full w-10 h-10 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1594602990685-2ad837215085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxzbWFsbCUyMGNlcmFtaWMlMjBjdXAlMjBvZiUyMGVzcHJlc3NvJTIwb24lMjBjb3VudGVyJTIwd2l0aCUyMHdhcm0lMjB0b25lc3xlbnwwfDB8fHwxNzU2Mjc2NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080')"></div>
+        <div>
+          <h1 class="text-xl font-display">Niyantri</h1>
+          <p class="text-xs text-coffee-500 -mt-1">Contact & Hours</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="hover:text-coffee-700">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('about.html');" class="hover:text-coffee-700">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('contact.html');" class="hover:text-coffee-700">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="px-3 py-1 bg-coffee-500 text-white rounded-md">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full max-w-none px-6 py-10">
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section class="p-6 bg-coffee-50 rounded-lg">
+        <h2 class="text-2xl font-display">Get in touch</h2>
+        <p class="mt-2 text-coffee-600">Questions about private events, bulk orders, or collaborations? Drop us a message — we’d love to hear from you.</p>
+
+        <div class="mt-6 space-y-4">
+          <div>
+            <h4 class="font-display">Address</h4>
+            <p class="text-sm text-coffee-600">123 Bean Lane, Cityville</p>
+          </div>
+          <div>
+            <h4 class="font-display">Hours</h4>
+            <p class="text-sm text-coffee-600">Mon–Sun: 7:00 AM — 6:00 PM</p>
+          </div>
+          <div>
+            <h4 class="font-display">Phone</h4>
+            <p class="text-sm text-coffee-600">(555) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <h4 class="font-display">Find us</h4>
+          <img src="https://images.pexels.com/photos/28884702/pexels-photo-28884702.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="map" class="w-full h-48 object-cover rounded-md mt-3" />
+        </div>
+      </section>
+
+      <section class="p-6 bg-white rounded-lg shadow">
+        <h3 class="text-xl font-display">Contact Form</h3>
+        <form id="contactForm" class="mt-4 space-y-4">
+          <div>
+            <label class="text-sm">Name</label>
+            <input id="name" type="text" required class="w-full px-4 py-2 border rounded-md focus:outline-none" />
+          </div>
+          <div>
+            <label class="text-sm">Email</label>
+            <input id="email" type="email" required class="w-full px-4 py-2 border rounded-md focus:outline-none" />
+          </div>
+          <div>
+            <label class="text-sm">Message</label>
+            <textarea id="message" rows="5" required class="w-full px-4 py-2 border rounded-md focus:outline-none"></textarea>
+          </div>
+          <div class="flex items-center gap-3">
+            <button type="submit" class="px-4 py-2 bg-coffee-700 text-white rounded-md hover:scale-105 transition">Send Message</button>
+            <button type="button" id="clearBtn" class="px-4 py-2 border rounded-md">Clear</button>
+          </div>
+          <p id="formStatus" class="text-sm text-coffee-600"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="w-full max-w-none bg-white/80 mt-8">
+    <div class="w-full px-6 py-6 md:flex md:justify-between">
+      <div>
+        <h4 class="font-display">Niyantri</h4>
+        <p class="text-sm text-coffee-600">123 Bean Lane — Open daily 7am–6pm</p>
+        <p class="text-sm text-coffee-600 mt-1">Cofounders: GSR & MRR</p>
+      </div>
+      <div class="mt-4 md:mt-0">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('index.html');" class="block">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" onclick="window.parent.handlePreviewNavigation && window.parent.handlePreviewNavigation('about.html');" class="block">About</a>
+      </div>
+    </div>
+    <div class="w-full text-center py-4 text-sm text-coffee-500">© <span id="yearContact"></span> Niyantri</div>
+  </footer>
+
+  <script>
+    document.getElementById('yearContact').textContent = new Date().getFullYear();
+
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    const clearBtn = document.getElementById('clearBtn');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+
+      if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+        formStatus.textContent = 'Please fill in all fields.';
+        formStatus.classList.add('text-red-500');
+        return;
+      }
+      if (!/\S+@\S+\.\S+/.test(email.value)) {
+        formStatus.textContent = 'Please enter a valid email.';
+        formStatus.classList.add('text-red-500');
+        return;
+      }
+
+      // Simulate sending data
+      formStatus.textContent = 'Sending...';
+      formStatus.classList.remove('text-red-500');
+      setTimeout(() => {
+        formStatus.textContent = 'Thanks! We received your message and will reply shortly.';
+        formStatus.classList.remove('text-red-500');
+        formStatus.classList.add('text-coffee-700');
+        contactForm.reset();
+      }, 900);
+    });
+
+    clearBtn.addEventListener('click', () => {
+      contactForm.reset();
+      formStatus.textContent = '';
+    });
+  </script>
+</body>
+</html>
